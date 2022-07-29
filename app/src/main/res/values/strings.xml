@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SensorSuhuIOT</string>
+    <string name="pilih_witel">Pilih Witel</string>
+    <string name="pilih_datel">Pilih Datel</string>
+    <string name="pilih_sto">Pilih STO</string>
+    <string name="pilih_flagging">Pilih Flagging</string>
+</resources>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_2"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/bottom_sheet_background"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:layout_editor_absoluteX="31dp"
+    tools:layout_editor_absoluteY="0dp"
+    tools:context=".MainActivity">
+    <View
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_sheet_navigation"
+        />
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+            <include layout="@layout/item_placeholder_layout"/>
+        </LinearLayout>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+    <ScrollView
+        android:id="@+id/theScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_x1"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cl_1"
+            app:layout_constraintEnd_toEndOf="@+id/cl_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cl_1"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/witel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Witel :"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_witel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x2"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x1"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/kandatel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Kandatel :"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_kandatel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x3"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x2"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/sto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Sto :"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_sto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x4"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x3"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/flagging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Flagging :"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_flagging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x5"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x4"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/loc_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Location Point :"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_loc_point"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt"
+                app:autoSizeMaxTextSize="11pt"
+                app:autoSizeMinTextSize="8pt"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x6"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x5"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="Address :"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_addrs"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt"
+                app:autoSizeMaxTextSize="11pt"
+                app:autoSizeMinTextSize="8pt"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x7"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x6"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/latlong"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="LatLong :"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/data_latlong_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                app:chipBackgroundColor="@android:color/holo_blue_dark"
+                android:text="TEST"
+                android:textColor="@android:color/white"
+                android:textSize="20pt"/>
+<!--            <TextView-->
+<!--                android:id="@+id/data_latlong"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="0"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12pt" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x8"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x7"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/temp_cutoff_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Temp_Cutoff_Alarm :"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_cutoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x9"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x8"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="DateTime :"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_x10"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x9"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/current_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Current Temperature :"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/data_current_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x1"
+            tools:ignore="MissingConstraints,NotSibling" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x2"
+            tools:ignore="MissingConstraints,NotSibling" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x3"
+            tools:ignore="MissingConstraints,NotSibling" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x4"
+            tools:ignore="MissingConstraints,NotSibling" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x5"
+            tools:ignore="MissingConstraints,NotSibling" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x6"
+            tools:ignore="MissingConstraints,NotSibling" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x7"
+            tools:ignore="MissingConstraints,NotSibling" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x8"
+            tools:ignore="MissingConstraints,NotSibling" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x9"
+            tools:ignore="MissingConstraints,NotSibling"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_x10"
+            tools:ignore="MissingConstraints,NotSibling"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_btn_refresh"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/holo_blue_dark"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.341"
+            tools:ignore="InvalidId,MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="REFRESH"
+                android:textColor="@android:color/white" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
